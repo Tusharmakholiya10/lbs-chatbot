@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LBS Pithoragarh Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="chat-header">
+    🤖 LBS Pithoragarh Assistant
+    <button class="clear-btn" onclick="clearChat()">
+        Clear Chat
+    </button>
+</div>
+    </div>
+
+    <div class="chat-box" id="chat-box">
+        <div class="bot-message">
+            Hello! How can I help you today?
+        </div>
+    </div>
+
+    <div class="input-area">
+        <input
+            type="text"
+            id="message"
+            placeholder="Type your message..."
+        >
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

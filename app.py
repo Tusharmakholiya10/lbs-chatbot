@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import google.generativeai as genai
 from dotenv import load_dotenv
 import os
@@ -29,9 +29,10 @@ def clear_history():
     })
 
 
+from flask import render_template
 @app.route("/")
 def home():
-    return "Backend is running!"
+    return render_template("index.html")
 
 @app.route("/health")
 def health():
