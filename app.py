@@ -49,6 +49,27 @@ def health():
         "status": "ok"
     })
 
+@app.route("/suggestions")
+def suggestions():
+
+    return jsonify({
+
+        "suggestions":[
+
+            "📚 What courses are available?",
+
+            "📞 What is the contact number?",
+
+            "📍 Where is the institute located?",
+
+            "✉️ What is the email address?",
+
+            "📝 How can I take admission?"
+
+        ]
+
+    })
+
 
 @app.route("/clear-history", methods=["POST"])
 def clear_history():
